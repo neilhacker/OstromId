@@ -33,6 +33,7 @@ Obtain other credentials needed to run project
 | Ethereum | Address |
 | Ethereum | Private Key |
 | Ethereum | Mnemonic |
+
 \* Once you have a Stripe account you can create this key in dashboard.stripe.com/test/apikeys for permissions everything stays as NONE except in the Identity section have 'Verification Sessions and Reports' & 'Access recent detailed verification results' marked as READ
 
 Run stripe webhook listener:
