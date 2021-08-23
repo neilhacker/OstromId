@@ -1,0 +1,219 @@
+body {
+    background: #F7F5F8;
+}
+
+.centeredHeader {
+    text-align: center;
+}
+/* --------------------------------------------------------------------- */
+/* ---------------------------TOGGLE BUTTON----------------------------- */
+/* --------------------------------------------------------------------- */
+.toggleButtonContainerAnonymous {
+    background-Color: #FCD0E0;
+    margin: 0 auto;
+    width: 163px;
+    padding: 4px;
+    border-radius: 30px;
+    border: none;
+    font-Weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px rgb(204, 203, 203);
+}
+
+.toggleButtonContainerOpen {
+    background-Color: #CED9FF;
+    margin: 0 auto;
+    width: 163px;
+    padding: 4px;
+    border-radius: 80px;
+    border: none;
+    font-Weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px rgb(204, 203, 203);
+}
+
+.toggleButtonOptionActive {
+    background-Color: white;
+    width: fit-content;
+    padding: 6%;
+    border-radius: 30px;
+    border: none;
+    font-Weight: bold;
+    cursor: pointer;
+    /* margin-right: 2%; */
+}
+
+.toggleButtonOptionAnonymousNotActive {
+    background-Color: #CED9FF;
+    width: fit-content;
+    padding: 6%;
+    border-radius: 30px;
+    border: none;
+    font-Weight: bold;
+    cursor: pointer;
+    /* margin-right: 2%; */
+}
+
+.toggleButtonOptionOpenNotActive {
+    background-Color: #FCD0E0;
+    width: fit-content;
+    padding: 6%;
+    border-radius: 30px;
+    border: none;
+    font-Weight: bold;
+    cursor: pointer;
+    /* margin-left: 2%; */
+}
+
+/* --------------------------------------------------------------------- */
+/* ----------------------OPEN VERIFICATION MESSAGE---------------------- */
+/* --------------------------------------------------------------------- */
+
+.openVerificationWarningMessage {
+    background-Color: #e1e6f7;
+    padding: 2%;
+    border-radius: 30px;
+
+
+}
+
+/* --------------------------------------------------------------------- */
+/* ---------------------------NORMAL BUTTON----------------------------- */
+/* --------------------------------------------------------------------- */
+
+.button {
+    color:#D70F6C;
+    background-Color: #FDEAF1;
+    width: fit-content;
+    padding: 3%;
+    border-radius: 12px;
+    border: none;
+    font-Weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-Color: #FCDCE7;
+}
+
+/* --------------------------------------------------------------------- */
+/* -----------------------------DIV BOXES------------------------------- */
+/* --------------------------------------------------------------------- */
+
+.statusBox {
+    background-color: white;
+    border-radius: 20px;
+    padding: 1%;
+    box-shadow: 0px 0px 30px rgb(204, 203, 203);
+}
+
+.aboutBox {
+    background-color: white;
+    border-radius: 20px;
+    padding: 1%;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 30px rgb(204, 203, 203);
+}
+
+/* --------------------------------------------------------------------- */
+/* -----------------------------MENU STUFF------------------------------ */
+/* --------------------------------------------------------------------- */
+
+.menu {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1%;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 30px rgb(204, 203, 203);
+}
+
+.menuOption {
+    color: black;
+    /* background-Color: #FDEAF1; */
+    width: fit-content;
+    padding: 1%;
+    border-radius: 17px;
+    border: none;
+    font-Weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.menuOption:hover {
+    color:#D70F6C;
+    background-Color: #FDEAF1;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 17px;
+    border: none;
+    font-Weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* -----------------------------COPY MESSAGE---------------------------- */
+/* --------------------------------------------------------------------- */
+.copyMessage {
+    background-Color: #DBFFDB;
+    color: #398937;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #398937;
+    font-weight: 800;
+    padding: 8px;
+    width: 35%;
+}
+
+/* --------------------------------------------------------------------- */
+/* -----------------------------ACCOUNT BOX----------------------------- */
+/* --------------------------------------------------------------------- */
+
+.verifiedText {
+    color: #31b350
+}
+
+.accountBoxNormal {
+    color: black;
+    background-color: #F7F5F8;
+    padding: 3%;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.networkNormal {
+    color: #e5bb42;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5bb42;
+    background-color: #f7efd9;
+    width: fit-content;
+    padding: 2%;
+    border-radius: 12px;
+    margin-bottom: 2%;
+}
+
+.accountBoxVerified {
+    color: black;
+    background-color: #c9ebc9;
+    padding: 3%;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0px 0px 30px rgb(204, 203, 203);
+
+}
+
+.networkVerified {
+    color: #31b350;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #31b350;
+    background-color: #c9ebc9;
+    width: fit-content;
+    padding: 2%;
+    border-radius: 12px;
+    margin-bottom: 2%;
+}

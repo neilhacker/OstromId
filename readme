@@ -1,0 +1,38 @@
+   ____       __                          ____    __
+  / __ \_____/ /__________  ____ ___     /  _/___/ /
+ / / / / ___/ __/ ___/ __ \/ __ `__ \    / // __  / 
+/ /_/ (__  ) /_/ /  / /_/ / / / / / /  _/ // /_/ /  
+\____/____/\__/_/   \____/_/ /_/ /_/  /___/\__,_/  
+
+---------------------- To Run ----------------------
+stripe listen --forward-to localhost:3000/api/stripe_hook
+
+/root npm run dev
+
+---------------------- Directory structure ----------------------
+
+
+---------------------- To deploy contracts ----------------------
+go to ./ethereum and run 
+node compile.js to get new build files
+node deploy.js to get new contract factory address
+
+copy address to factory.js
+
+---------------------- Eth contract address ----------------------
+/backend/ethBackend.js
+/backend/ethOpenVerification.js
+/ethereum/verification.js
+/pages/api/create-verification-session.js
+
+---------------------- Functionality ----------------------
+successful id verifications will lead to hash being submitted to contract
+contract is linked with zk verifier contract and so has one function (verifyHash) that should be called once the client has 
+generated their zkp, this should return a bool about whether the transaction has been successful
+(this has working functionality but no database or error handling)
+---------------------- TODO ----------------------
+GENERAL
+* error handling
+
+STRIPE
+* add authentication so we know webhook comes from stripe
