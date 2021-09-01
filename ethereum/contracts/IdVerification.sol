@@ -295,28 +295,13 @@ contract IdVerification is Verifier{
         paidDeposit[msg.sender] = true;
         depositAmount[msg.sender] = msg.value;
     }
-    
-    // can refund deposit at any time before they have gone through verification process
-    // function returnDeposit() public payable {
-    //     require(paidDeposit[msg.sender] == true);
-    //     uint amountToRefund = depositAmount[msg.sender];
-    //     paidDeposit[msg.sender] = false;
-    //     depositAmount[msg.sender] = 0;
-    //     msg.sender.transfer(amountToRefund);
-    // }
-    
+        
     // once verification process has started deposit is locked 
     // if verification successful this will remain locked 
     function lockDeposity(address depositAddress) public restricted {
         paidDeposit[depositAddress] = false;
     }
     
-    // if there is error in verification process (i.e returns something other than verirfied or unverified)
-    // unlock the deposit so the user has the option of getting the deposit back
-    // function unlockDeposity(address depositAddress) public restricted {
-    //     paidDeposit[depositAddress] = true;
-    // }
-
     function addOpenVerification(address adr, string name) public restricted {
         openVerifiedAddresses[adr] = name;
     }
