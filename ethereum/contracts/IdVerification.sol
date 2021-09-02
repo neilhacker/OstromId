@@ -268,7 +268,7 @@ contract Verifier {
 }
 
 contract IdVerification is Verifier{
-    uint minimumContribution = 10;
+    uint minimumContribution = 530000000000000; // contract uses wei not eth
     address public owner; 
 
     mapping (address => bool) public paidDeposit;
@@ -297,7 +297,6 @@ contract IdVerification is Verifier{
     }
         
     // once verification process has started deposit is locked 
-    // if verification successful this will remain locked 
     function lockDeposity(address depositAddress) public restricted {
         paidDeposit[depositAddress] = false;
     }
@@ -357,15 +356,5 @@ contract IdVerification is Verifier{
         return paidDeposit[adr];
     }
 
-    // this is just here so I can easily delete my account from remix to do tests
-    // remove for actual code
-    function removeAccount(address adr) public {
-        verifiedAddresses[adr] = false;
-    }
-
-    function removeDeposit(address adr) public {
-        depositAmount[adr] = 0;
-        paidDeposit[adr] = false;
-    }
 
 }    
