@@ -1,1 +1,0 @@
-{"ast":null,"code":"/*const routes = require(\"next-routes\")();\n\n\nmodule.exports = routes;*/","map":{"version":3,"sources":["/Users/neilhacker/Desktop/working_on/ostrom_id_copy_5/routes.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA","sourcesContent":["/*const routes = require(\"next-routes\")();\n\n\nmodule.exports = routes;*/"]},"metadata":{},"sourceType":"script"}
