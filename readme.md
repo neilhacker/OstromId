@@ -13,6 +13,9 @@
 * This provides a very strong proof of unique personhood but creates the opportunity to then link addresses with real identities that some users may find more intrusive than they want for a simple PoUP.
 * By using zkp we decopule the verification and the submission in a way that we cannot link addresses to the identies that control them. 
 
+## Demo
+This is a 6ish minute screen recording of running through the user flow https://drive.google.com/file/d/1i0LCGnA4C1H2LVTmJgrap9iZohL9uVl1/view
+
 
 ## Set up
 Clone repository
